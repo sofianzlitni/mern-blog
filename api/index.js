@@ -159,10 +159,8 @@ app.delete('/post/:id', async (req, res) => {
     res.status(200).json('post deleted!')
   } catch (error) {
     return res.status(400).json('can not delete!');
-    
-  }
+  };
 });
-
 
 
 app.listen(4000);
